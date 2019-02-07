@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Accounts</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>User Accounts</h1>
+    <p>Welcome to all your accounts that you have linked</p>
+    
+   
+<table class="table table-inverse">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Bank</th>
+          <th>Account Type</th>
+
+        </tr>
+      </thead>
+
+      <tbody>
+        <% for(var i=0; i < accounts.length; i++) { %>
+       <tr>
+
+         <td><a href="/account_details?account_id=<%= accounts[i].id %>&bank_id=<%=accounts[i].bank_id%>"><%= accounts[i].id %></a></td>
+         <td><%= accounts[i].bank_id %></td>
+         <td><%= accounts[i].account_type %></td>
+       </tr>
+    <% } %>
+      </tbody>
+
+</table>
+     
+  </body>
+</html>

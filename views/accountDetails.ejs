@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Accounts</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Account Details</h1>
+    <p>Account Details</p>
+    
+   
+   Based on your recent transactions by rounding all money out to the nearest dollar, we are going to transfer <b><%=saveamount%></b> to your Pension Fund at Smart Pension</br><br>
+  
+   
+<table class="table table-inverse">
+      <thead>
+        <tr>
+          <th>Transaction ID</th>
+          <th>Description</th>
+          <th>Date</th>
+          <th>Currency</th>
+          <th>Amount</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% for(var i=0; i < transactions.length; i++) { %>
+       <tr>
+
+         <td><%= transactions[i].id %></td>
+         <td><%= transactions[i].details.description %></td>
+         <td><%= transactions[i].details.completed %></td>
+         <td><%= transactions[i].details.value.currency %></td>
+         <td><%= transactions[i].details.value.amount %></td>
+         <td><%= transactions[i].details.new_balance.amount%></td>
+       </tr>
+    <% } %>
+      </tbody>
+
+
+      </table>
+     
+  </body>
+</html>

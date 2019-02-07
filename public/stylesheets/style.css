@@ -1,0 +1,12 @@
+.header-site
+	background: #000000 url(https://www.autoenrolment.co.uk/images/logos/smart-pension-483cd6b8.svg) 100% 100% no-repeat;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
