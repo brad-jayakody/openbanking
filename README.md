@@ -1,6 +1,6 @@
-# Project Title
+# Open Banking Proof of Concept
 
-Open Banking Proof of Concept
+
 
 ## Getting Started
 
